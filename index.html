@@ -34,7 +34,7 @@
 
 		<!-- Dropdown Structure -->
 		<ul id="dropdown1" class="dropdown-content">
-			<li><a href="#!"><i class="material-icons">inbox</i>Primary</a></li>
+			<li><a href="#!" onclick="load_index1()"><i class="material-icons">inbox</i>Primary</a></li>
 			<li><a href="#!"><i class="material-icons">group</i>Social</a></li>
 			<li><a href="#!"><i class="material-icons">local_offer</i>Promotions</a></li>
 			<li class="divider"></li>
@@ -52,7 +52,15 @@
 			<li><a href="#!"><i class="material-icons">settings</i>Settings</a></li>
 			<li><a href="#!"><i class="material-icons">announcement</i>Help &amp; feedback</a></li>
 		</ul>
-
+		<div id="main-co" style="margin-left:10%">
+		</div>
+		<script>
+			function load_index1(){
+				document.getElementById("main-co").innerHTML='<object type="type/html" data="index1.html"  width="90%" height="950px"></object>';
+				document.getElementById("tt").innerHTML='Primary';
+			} 
+		</script>
+				
 		<!--JavaScript at end of body for optimized loading-->
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 	</body>
