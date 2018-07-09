@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<!--Import Google Icon Font-->
@@ -9,19 +9,33 @@
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	
-		<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
-		<script>
-			$("#dropdown-trigger").ready(function(){
-				$("#dropdown-trigger").dropdown();
-			});
-		</script>
+		<style>
+.dropdown-co {
+    display: none;
+    position: absolute;
+    background-color: #fff;margin:0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-co a {
+    color:#26a69a;
+    padding: 14px 16px;
+    text-decoration: none;line-height:22px;
+    display: block;
+}
+.dropdown-co li:hover,.dropdown-co li.active{background-color:#eee}
+.dropdown-co li>a>i{height:inherit;line-height:inherit;float:left;margin:0 24px 0 0;width:24px}
+.show {display: block;}
+		</style>
 
 	</head>
 
 	<body>
 		<nav>
 			<div class="nav-wrapper">
-				<a href="#!" class="brand-logo" id="dropdown-trigger" data-target="dropdown1"><i class="material-icons" style="margin-left: 10px">menu</i></a>
+				<a href="#!" class="brand-logo" id="dropdown-trigger" onclick="myFunction()"><i class="material-icons" style="margin-left: 10px">menu</i></a>
 				<a href="#!" class="brand-logo" id="tt" style="margin-left: 80px">Inbox</a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="sass.html"><i class="material-icons">search</i></a></li>
@@ -33,9 +47,9 @@
 		</nav>  
 
 		<!-- Dropdown Structure -->
-		<ul id="dropdown1" class="dropdown-content">
-			  <li><a href="#!"><i class="material-icons">account_circle</i></a></li>
- <li class="divider"></li>
+		<ul id="myDropdown" class="dropdown-co">
+			<li><a href="#!"><i class="material-icons">account_circle</i>Profile</a></li>
+ 			<li class="divider"></li>
 			<li><a href="#!" onclick="load_index1()"><i class="material-icons">inbox</i>Primary</a></li>
 			<li><a href="#!"><i class="material-icons">group</i>Social</a></li>
 			<li><a href="#!"><i class="material-icons">local_offer</i>Promotions</a></li>
@@ -54,13 +68,117 @@
 			<li><a href="#!"><i class="material-icons">settings</i>Settings</a></li>
 			<li><a href="#!"><i class="material-icons">announcement</i>Help &amp; feedback</a></li>
 		</ul>
-		<div id="main-co" style="margin-left:10%">
+		<div id="main-co" style="margin-left:15%">
+		<ul class="collection" style="width:90%">
+			<li class="collection-item avatar">
+				<a href="#!" style="color:black">
+				<i class="material-icons circle blue">G</i>
+				<span class="title">Github</span>
+				<p>[Github] A personal access token has been a..... <br>
+				Hey! UserName! A personal access token (git: ht.....
+				</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</a>
+			</li>
+			<li class="collection-item avatar">
+				<a href="#!" style="color:black">
+				<i class="material-icons circle blue">G</i>
+				<span class="title">Google Cloud Platform</span>
+				<p>New Third-party Subprocessor for Firebase <br>
+				New Third-Party Subprocessor for Firebase My C.....
+				</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</a>
+			</li>
+			<li class="collection-item avatar">
+				<a href="#!" style="color:black">
+				<i class="material-icons circle cyan">H</i>
+				<span class="title">Human</span>
+				<p>Please prepare the list of technologies mentioned f.....<br>
+				Dear Jue Thank you for being a part and participating.....
+				</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</a>
+			</li>
+			<li class="collection-item avatar">
+				<a href="#!" style="color:black">
+				<i class="material-icons circle blue">F</i>
+				<span class="title">Firebase</span>
+				<p>[Firebase]Welcome to Firebase!<br>
+				Hi Jue, Welcome to Firebase! You're now part of.....
+				</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</a>
+			</li>
+			<li class="collection-item avatar">
+				<a href="#!" style="color:black">
+				<i class="material-icons circle brown">L</i>
+				<span class="title">Le Ya Gaw</span>
+				<p>TIIDE Mdalay-Geo Team meet with Director<br>
+				Geomandalar လက်​အောက်တွင်ရှိ​သော ​Mandalay ကျောင်းသား​ကျောင်းသူများအတွက် ဖြစ်သည်.....
+				</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</a>
+			</li>
+			<li class="collection-item avatar">
+				<a href="#!" style="color:black">
+				<i class="material-icons circle cyan">H</i>
+				<span class="title">Heroku</span>
+				<p>Manage your data with Heroku Postgres<br>
+				Provision, manage, and scale your app's data reso.....
+				</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</a>
+			</li>
+			<li class="collection-item avatar">
+				<a href="#!" style="color:black">
+				<i class="material-icons circle">T</i>
+				<span class="title">The Wattpad Team</span>
+				<p>Phue Phue has joined Wattpad!<br>
+				Your Facebook friend Phue Phue has joined Wattp.....
+				</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</a>
+			</li>
+			<li class="collection-item avatar">
+				<a href="#!" style="color:black">
+				<i class="material-icons circle blue">F</i>
+				<span class="title">Facebook</span>
+				<p>Update to your FaceBook mobile number<br>
+				Hi Soe, We wanted to le you know that your mobi.....
+				</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</a>
+			</li>
+			<li class="collection-item avatar">
+				<i class="material-icons circle blue">G</i>
+				<span class="title">Google Cloud Platform</span>
+				<p>New Third-party Subprocessor for Firebase <br>
+				New Third-Party Subprocessor for Firebase My C.....
+				</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</a>
+			</li>
+			<li class="collection-item avatar">
+				<a href="#!" style="color:black">
+				<i class="material-icons circle">T</i>
+				<span class="title">TinyTake</span>
+				<p>Welcome to TinyTake<br>
+				TinyTake Welcome to TinyTake Thanks for signing.....
+				</p>
+				<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</a>
+			</li>
+		</ul>
 		</div>
 		<script>
 			function load_index1(){
 				document.getElementById("main-co").innerHTML='<object type="type/html" data="index1.html"  width="90%" height="950px"></object>';
 				document.getElementById("tt").innerHTML='Primary';
 			} 
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 		</script>
 				
 		<!--JavaScript at end of body for optimized loading-->
