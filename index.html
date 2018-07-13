@@ -10,24 +10,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	
 		<style>
-.dropdown-co {
-    display: none;
-    position: absolute;
-    background-color: #fff;margin:0;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+			.dropdown-co {
+    				display: none;
+    				position: absolute;
+    				background-color: #fff;
+				margin:0;
+    				min-width: 160px;
+    				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    				z-index: 1;
+				}
 
-.dropdown-co a {
-    color:#26a69a;
-    padding: 14px 16px;
-    text-decoration: none;line-height:22px;
-    display: block;
-}
-.dropdown-co li:hover,.dropdown-co li.active{background-color:#eee}
-.dropdown-co li>a>i{height:inherit;line-height:inherit;float:left;margin:0 24px 0 0;width:24px}
-.show {display: block;}
+			.dropdown-co a {
+    				color:#26a69a;
+    				padding: 14px 16px;
+    				text-decoration: none;
+				line-height:22px;
+    				display: block;
+			}
+			.dropdown-co li:hover,.dropdown-co li.active
+			{
+				background-color:#eee
+			}
+			.dropdown-co li>a>i
+			{
+				height:inherit;
+				line-height:inherit;
+				float:left;
+				margin:0 24px 0 0;
+				width:24px
+			}
+			.show 
+			{
+				display: block;
+			}
 		</style>
 
 	</head>
@@ -175,10 +190,11 @@
 			function load_index1(){
 				document.getElementById("main-co").innerHTML='<object type="type/html" data="index1.html"  width="90%" height="950px"></object>';
 				document.getElementById("tt").innerHTML='Primary';
+				
 			} 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+			function myFunction() {
+    				document.getElementById("myDropdown").classList.toggle("show");
+			}
 		</script>
 				
 		<!--JavaScript at end of body for optimized loading-->
